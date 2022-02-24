@@ -53,7 +53,7 @@ function Header({placeholder}) {
             </div>
             <div className="flex justify-between md:border-2 rounded-full py-2 pl-5 pr-2 md:shadow-sm">
                 <input type='text' value={searchInput} placeholder={placeholder || 'Start your search...'} className="transparent outline-none flex-grow flex-shrink min-w-0 text-gray-500 placeholder-gray-300" onChange={(e) => setSearchInput(e.target.value)}></input>
-                <SearchIcon className="w-8 h-8 bg-red-400 text-white rounded-full p-1 cursor-pointer hidden md:inline-flex flex-shrink-0"></SearchIcon>
+                <SearchIcon className="w-8 h-8 bg-red-400 text-white rounded-full p-1 cursor-pointer hidden md:inline-flex flex-shrink-0" onClick={search}></SearchIcon>
             </div>
             <div className="flex relative items-center space-x-4 justify-end text-gray-500">
                 <p className="content-center hidden lg:inline-flex">Become a host</p>
